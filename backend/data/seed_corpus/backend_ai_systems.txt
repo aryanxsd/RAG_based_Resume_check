@@ -1,0 +1,9 @@
+Backend Engineer for AI Systems
+
+A backend service for retrieval augmented generation should separate request validation, session state, retrieval, generation, and persistence. The API layer should remain thin while the service layer owns business decisions such as when to create a session, how to select retrieval queries, and how to store traceability metadata. A reliable interview system should persist each question, answer, retrieved context, and generation trace so a reviewer can audit why the system asked a question.
+
+Vector search systems normally transform text chunks into embeddings and compare a query vector with stored chunk vectors. Chunking should preserve local context, avoid cutting definitions in half, and keep chunks small enough for downstream generation. Retrieval quality depends on query construction, source filtering, scoring, and deduplication. Good backend design also handles empty knowledge bases, invalid uploads, repeated answers, and completed sessions explicitly.
+
+For AI product APIs, session continuity is essential. A candidate screening flow should remember the selected role, parsed resume signals, previous responses, and current interview stage. The next question can adapt by combining role expectations, resume skills, the latest answer, and retrieved content. Persistence makes the flow recoverable and supports final summaries, analytics, and audit logs.
+
+Production-grade systems need configuration through environment variables, clear database boundaries, robust validation, and observability. A service that downloads documents or builds a vector index should run as a separate ingestion job rather than inside every request. This keeps the API responsive and makes the knowledge base reproducible.

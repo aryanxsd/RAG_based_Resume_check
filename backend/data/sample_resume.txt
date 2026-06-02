@@ -1,0 +1,13 @@
+Priyanshu Aryan
+AI/ML and Backend Engineering Intern
+
+Skills: Python, FastAPI, React, SQL, SQLite, Machine Learning, Deep Learning, NLP, RAG, embeddings, vector database, pandas, numpy, Docker, Git.
+
+Projects:
+- Built a retrieval augmented generation assistant using document chunking, embeddings, vector retrieval, and a FastAPI backend.
+- Created machine learning pipelines with train-test validation, feature engineering, and model evaluation using precision, recall, and F1.
+- Developed full-stack dashboards with React frontend components and REST APIs backed by SQL databases.
+
+Experience:
+- Comfortable designing API routes, validating inputs, storing session data, and debugging production-style backend flows.
+- Interested in applied ML systems where model quality, retrieval quality, and user experience all matter.

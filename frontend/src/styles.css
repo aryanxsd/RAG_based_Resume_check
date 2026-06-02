@@ -1,0 +1,390 @@
+:root {
+  color: #1e2329;
+  background: #f5f7fb;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+button,
+select,
+textarea {
+  font: inherit;
+}
+
+.app-shell {
+  min-height: 100vh;
+  background:
+    linear-gradient(120deg, rgba(224, 241, 255, 0.9), rgba(249, 251, 252, 0.9) 42%, rgba(244, 238, 229, 0.72)),
+    #f6f8fb;
+  padding: 24px;
+}
+
+.workspace {
+  display: grid;
+  grid-template-columns: minmax(280px, 360px) minmax(0, 1fr);
+  gap: 18px;
+  max-width: 1380px;
+  margin: 0 auto;
+  min-height: calc(100vh - 48px);
+}
+
+.sidebar,
+.interview-panel,
+.active-question,
+.turn,
+.summary-band {
+  border: 1px solid #d9e0e8;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 18px 45px rgba(31, 44, 56, 0.08);
+}
+
+.sidebar {
+  padding: 22px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.brand-lockup {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-mark {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  background: #183b56;
+  color: #f8fbff;
+  border-radius: 8px;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+
+.brand-lockup p,
+.role-note p,
+.empty-state p,
+.turn small,
+.candidate-strip span,
+.system-readout span,
+.summary-band span {
+  color: #697686;
+}
+
+.start-form {
+  display: grid;
+  gap: 14px;
+}
+
+label {
+  display: grid;
+  gap: 8px;
+  color: #415060;
+  font-weight: 700;
+}
+
+select,
+textarea {
+  width: 100%;
+  border: 1px solid #c8d2de;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #1e2329;
+}
+
+select {
+  min-height: 44px;
+  padding: 0 12px;
+}
+
+textarea {
+  resize: vertical;
+  padding: 14px;
+  line-height: 1.5;
+}
+
+.upload-zone {
+  min-height: 110px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 18px;
+  border: 1px dashed #9fb0c1;
+  border-radius: 8px;
+  background: #f8fbff;
+  cursor: pointer;
+}
+
+.upload-zone input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.primary-button {
+  min-height: 44px;
+  border: 0;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 0 16px;
+  color: #ffffff;
+  background: #146c66;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.primary-button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.system-readout,
+.role-note {
+  display: grid;
+  gap: 6px;
+  padding-top: 18px;
+  border-top: 1px solid #e1e7ee;
+}
+
+.system-readout strong {
+  font-size: 1.8rem;
+}
+
+.interview-panel {
+  border-radius: 8px;
+  padding: 22px;
+  overflow: auto;
+}
+
+.empty-state {
+  min-height: 100%;
+  display: grid;
+  place-content: center;
+  gap: 12px;
+  text-align: center;
+  color: #405261;
+}
+
+.empty-state h2 {
+  font-size: 1.8rem;
+}
+
+.error-banner {
+  margin-bottom: 16px;
+  padding: 12px 14px;
+  border-radius: 8px;
+  background: #fff0ed;
+  border: 1px solid #f2b8aa;
+  color: #8a2d19;
+}
+
+.candidate-strip {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.candidate-strip div {
+  display: grid;
+  gap: 4px;
+  min-height: 74px;
+  padding: 14px;
+  border: 1px solid #dbe4ec;
+  border-radius: 8px;
+  background: #f9fbfd;
+}
+
+.candidate-strip strong {
+  overflow-wrap: anywhere;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.chips span,
+.summary-lists span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
+  padding: 5px 10px;
+  border-radius: 999px;
+  background: #e8f2f1;
+  color: #25504d;
+  font-weight: 700;
+  font-size: 0.88rem;
+}
+
+.timeline {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.turn {
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.turn header,
+.active-question header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.turn header span,
+.active-question header span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #146c66;
+  font-weight: 800;
+}
+
+.turn p {
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+blockquote {
+  margin: 0 0 10px;
+  padding: 10px 12px;
+  border-left: 3px solid #b77a2a;
+  background: #fff8ed;
+  color: #594223;
+}
+
+.active-question {
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.active-question h2 {
+  font-size: 1.45rem;
+  line-height: 1.35;
+  max-width: 980px;
+}
+
+.trace-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin: 18px 0;
+}
+
+.trace-grid div {
+  display: grid;
+  gap: 6px;
+  min-height: 74px;
+  padding: 12px;
+  border: 1px solid #dfe6ed;
+  border-radius: 8px;
+  background: #f7fafc;
+}
+
+.trace-grid span {
+  color: #607182;
+  overflow-wrap: anywhere;
+}
+
+.answer-form {
+  display: grid;
+  gap: 12px;
+}
+
+.summary-band {
+  display: grid;
+  grid-template-columns: 160px 180px minmax(0, 1fr);
+  align-items: center;
+  gap: 16px;
+  margin-top: 16px;
+  padding: 18px;
+  border-radius: 8px;
+}
+
+.summary-band div {
+  display: grid;
+  gap: 4px;
+}
+
+.summary-band strong {
+  font-size: 1.4rem;
+}
+
+.summary-lists {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.summary-lists div {
+  align-content: start;
+  padding-top: 12px;
+  border-top: 1px solid #e2e7ec;
+}
+
+.spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 900px) {
+  .app-shell {
+    padding: 12px;
+  }
+
+  .workspace,
+  .candidate-strip,
+  .trace-grid,
+  .summary-band,
+  .summary-lists {
+    grid-template-columns: 1fr;
+  }
+
+  .workspace {
+    min-height: auto;
+  }
+
+  .active-question h2 {
+    font-size: 1.2rem;
+  }
+}

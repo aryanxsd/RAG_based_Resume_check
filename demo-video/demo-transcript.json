@@ -1,0 +1,683 @@
+{
+  "health": {
+    "status": "ok",
+    "knowledge_chunks": 77
+  },
+  "roles": [
+    {
+      "id": "ai_ml_engineer",
+      "label": "AI/ML Engineer",
+      "description": "Modeling fundamentals, learning theory, feature engineering, evaluation, and deployment tradeoffs."
+    },
+    {
+      "id": "data_science_applied_ml",
+      "label": "Data Science / Applied ML",
+      "description": "Data preparation, model selection, validation, explainability, and applied business reasoning."
+    },
+    {
+      "id": "backend_engineer",
+      "label": "Backend Engineer for AI Systems",
+      "description": "API design, persistence, retrieval services, orchestration, reliability, and AI product backend flow."
+    },
+    {
+      "id": "advanced_theoretical_ml",
+      "label": "Advanced / Theoretical ML",
+      "description": "Probabilistic models, generalization, inference, optimization, and theory-aware system decisions."
+    }
+  ],
+  "session": {
+    "session_id": "a432b38c-2748-4483-ab61-36a2fb297949",
+    "role": "ai_ml_engineer",
+    "candidate_name": null,
+    "extracted_skills": [
+      "api",
+      "deep learning",
+      "docker",
+      "embeddings",
+      "fastapi",
+      "git",
+      "machine learning",
+      "nlp",
+      "numpy",
+      "pandas",
+      "python",
+      "rag",
+      "react",
+      "sql",
+      "sqlite",
+      "vector database"
+    ],
+    "domains": [
+      "backend",
+      "ai_ml",
+      "data_science",
+      "cloud_devops"
+    ],
+    "topics": [
+      "deep learning",
+      "docker",
+      "embeddings",
+      "fastapi",
+      "machine learning",
+      "numpy",
+      "pandas",
+      "python"
+    ],
+    "status": "active",
+    "current_question": {
+      "turn_number": 1,
+      "question": "Design a production-grade approach for the AI/ML Engineer role where variance is central. Discuss the mathematical or architectural tradeoff involving cross-validation, then describe how you would test whether your choice generalizes.",
+      "difficulty": "advanced",
+      "retrieved_context": [
+        {
+          "chunk_id": 4,
+          "role": "ai_ml_engineer",
+          "source_title": "Machine Learning Foundations Seed Corpus",
+          "source_url": null,
+          "score": 0.231,
+          "text": "Machine Learning Foundations Machine learning studies algorithms that improve their performance at a task through experience. A useful formulation identifies the task, the performance measure, and the training experience. Supervised learning uses labeled examples to learn a mapping from inputs to outputs, while unsupervised learning seeks structure in unlabeled data. Model evaluation should estimate performance on unseen data rather than only on training examples. Bias and variance describe two common sources of error. High bias can underfit because the hypothesis class is too restrictive or the features are inadequate. High variance can overfit because the model is too sensitive to training examples. Regularization, cross-validation, more data, and simpler hypotheses can reduce overfitting, but each choice has a tradeoff."
+        },
+        {
+          "chunk_id": 5,
+          "role": "ai_ml_engineer",
+          "source_title": "Machine Learning Foundations Seed Corpus",
+          "source_url": null,
+          "score": 0.2136,
+          "text": "too sensitive to training examples. Regularization, cross-validation, more data, and simpler hypotheses can reduce overfitting, but each choice has a tradeoff. Decision trees split data using tests over attributes and can represent interpretable rules. Nearest-neighbor methods classify by comparing a new example with stored examples under a distance function. Linear models combine features with learned weights and are often strong baselines. Neural networks learn layered representations but require careful training data, optimization, validation, and monitoring. Applied machine learning pipelines must avoid data leakage, choose metrics that match the problem, and communicate uncertainty. Classification metrics such as precision, recall, and F1 are useful when classes are imbalanced. Regression metrics such as mean absolute error or root mean squared error capture different error costs."
+        },
+        {
+          "chunk_id": 40,
+          "role": "ai_ml_engineer",
+          "source_title": "Machine Learning - Tom Mitchell",
+          "source_url": "https://www.cs.cmu.edu/~tom/files/MachineLearningTomMitchell.pdf?utm_source=chatgpt.com",
+          "score": 0.1878,
+          "text": "e power law of practice, which states that over a very broad range of learning problems, people's response time improves with practice according to a power law. Neurobiological studies motivating artificial neural network models of learning. 0 Statistics Characterization of errors (e.g., bias and variance) that occur when estimating the accuracy of a hypothesis based on a limited sample of data. Confidence intervals, statistical tests. TABLE 1.2 Some disciplines and examples of their influence on machine learning."
+        },
+        {
+          "chunk_id": 37,
+          "role": "ai_ml_engineer",
+          "source_title": "Machine Learning - Tom Mitchell",
+          "source_url": "https://www.cs.cmu.edu/~tom/files/MachineLearningTomMitchell.pdf?utm_source=chatgpt.com",
+          "score": 0.1813,
+          "text": "applications in many practical problems where very large search spaces must be examined efficiently. TABLE 1.1 Some successful applications of machiie learning. three features: the class of tasks, the measure of performance to be improved, and the source of experience. A checkers learning problem: Task T: playing checkers 0 Performance measure P: percent of games won against opponents Training experience E: playing practice games against itself We can specify many learning problems in this fashion, such as learning to recognize handwritten words, or learning to drive a robotic automobile au- tonomously. A handwriting recognition learning problem: 0 Task T: recognizing and classifying handwritten words within images 0 Performance measure P: percent of words correctly classified 4 MACHINE LEARNING Artificial intelligence Learning symbolic representations of concepts."
+        }
+      ],
+      "generation_trace": {
+        "role": "ai_ml_engineer",
+        "candidate_signals": {
+          "skills": [
+            "api",
+            "deep learning",
+            "docker",
+            "embeddings",
+            "fastapi",
+            "git",
+            "machine learning",
+            "nlp",
+            "numpy",
+            "pandas",
+            "python",
+            "rag",
+            "react",
+            "sql",
+            "sqlite",
+            "vector database"
+          ],
+          "domains": [
+            "backend",
+            "ai_ml",
+            "data_science",
+            "cloud_devops"
+          ]
+        },
+        "context_chunk_ids": [
+          4,
+          5,
+          40,
+          37
+        ],
+        "source_titles": [
+          "Machine Learning - Tom Mitchell",
+          "Machine Learning Foundations Seed Corpus"
+        ],
+        "keywords": [
+          "bias",
+          "variance",
+          "regularization",
+          "cross-validation",
+          "overfitting",
+          "supervised learning",
+          "unsupervised learning",
+          "model evaluation"
+        ],
+        "question_policy": "role + resume signals + retrieved chunk keywords + turn difficulty",
+        "retrieval_query": "role: ai_ml_engineer. resume skills/domains: api deep learning docker embeddings fastapi git machine learning nlp numpy pandas backend ai_ml data_science cloud_devops. role expectations: supervised learning bias variance regularization model evaluation feature engineering decision trees neural networks nearest neighbors training data validation generalization overfitting practical deployment."
+      }
+    }
+  },
+  "answers": [
+    {
+      "session_id": "a432b38c-2748-4483-ab61-36a2fb297949",
+      "status": "active",
+      "answer_score": {
+        "score": 78.0,
+        "concept_coverage": 0.94,
+        "specificity": 0.47,
+        "matched_terms": [
+          "and",
+          "avoid",
+          "bias",
+          "data",
+          "leakage",
+          "model",
+          "precision",
+          "recall",
+          "response",
+          "split",
+          "task",
+          "the"
+        ],
+        "feedback": "Strong answer: it connected multiple retrieved concepts with enough detail."
+      },
+      "next_question": {
+        "turn_number": 2,
+        "question": "As an AI/ML Engineer, build on your previous answer and explain how you would apply regularization and overfitting in a real project connected to api, deep learning, docker, embeddings. What assumptions would you validate, and what failure mode would you watch for?",
+        "difficulty": "advanced",
+        "retrieved_context": [
+          {
+            "chunk_id": 5,
+            "role": "ai_ml_engineer",
+            "source_title": "Machine Learning Foundations Seed Corpus",
+            "source_url": null,
+            "score": 0.3176,
+            "text": "too sensitive to training examples. Regularization, cross-validation, more data, and simpler hypotheses can reduce overfitting, but each choice has a tradeoff. Decision trees split data using tests over attributes and can represent interpretable rules. Nearest-neighbor methods classify by comparing a new example with stored examples under a distance function. Linear models combine features with learned weights and are often strong baselines. Neural networks learn layered representations but require careful training data, optimization, validation, and monitoring. Applied machine learning pipelines must avoid data leakage, choose metrics that match the problem, and communicate uncertainty. Classification metrics such as precision, recall, and F1 are useful when classes are imbalanced. Regression metrics such as mean absolute error or root mean squared error capture different error costs."
+          },
+          {
+            "chunk_id": 4,
+            "role": "ai_ml_engineer",
+            "source_title": "Machine Learning Foundations Seed Corpus",
+            "source_url": null,
+            "score": 0.3112,
+            "text": "Machine Learning Foundations Machine learning studies algorithms that improve their performance at a task through experience. A useful formulation identifies the task, the performance measure, and the training experience. Supervised learning uses labeled examples to learn a mapping from inputs to outputs, while unsupervised learning seeks structure in unlabeled data. Model evaluation should estimate performance on unseen data rather than only on training examples. Bias and variance describe two common sources of error. High bias can underfit because the hypothesis class is too restrictive or the features are inadequate. High variance can overfit because the model is too sensitive to training examples. Regularization, cross-validation, more data, and simpler hypotheses can reduce overfitting, but each choice has a tradeoff."
+          },
+          {
+            "chunk_id": 40,
+            "role": "ai_ml_engineer",
+            "source_title": "Machine Learning - Tom Mitchell",
+            "source_url": "https://www.cs.cmu.edu/~tom/files/MachineLearningTomMitchell.pdf?utm_source=chatgpt.com",
+            "score": 0.2882,
+            "text": "e power law of practice, which states that over a very broad range of learning problems, people's response time improves with practice according to a power law. Neurobiological studies motivating artificial neural network models of learning. 0 Statistics Characterization of errors (e.g., bias and variance) that occur when estimating the accuracy of a hypothesis based on a limited sample of data. Confidence intervals, statistical tests. TABLE 1.2 Some disciplines and examples of their influence on machine learning."
+          },
+          {
+            "chunk_id": 39,
+            "role": "ai_ml_engineer",
+            "source_title": "Machine Learning - Tom Mitchell",
+            "source_url": "https://www.cs.cmu.edu/~tom/files/MachineLearningTomMitchell.pdf?utm_source=chatgpt.com",
+            "score": 0.2703,
+            "text": "ty of different learning tasks, measured in terms of the computational effort, number of training examples, number of mistakes, etc. required in order to learn. Control theory Procedures that learn to control processes in order to optimize predefined objectives and that learn to predict the next state of the process they are controlling. 0 Information theory Measures of entropy and information content. Minimum description length approaches to learning. Optimal codes and their relationship to optimal training sequences for encoding a hypothesis. Philosophy Occam's razor, suggesting that the simplest hypothesis is the best. Analysis of the justification for generalizing beyond observed data. 0 Psychology and neurobiology The power law of practice, which states that over a very broad range of learning problems, people's response time improves with practice according to a power law."
+          }
+        ],
+        "generation_trace": {
+          "role": "ai_ml_engineer",
+          "candidate_signals": {
+            "skills": [
+              "api",
+              "deep learning",
+              "docker",
+              "embeddings",
+              "fastapi",
+              "git",
+              "machine learning",
+              "nlp",
+              "numpy",
+              "pandas",
+              "python",
+              "rag",
+              "react",
+              "sql",
+              "sqlite",
+              "vector database"
+            ],
+            "domains": [
+              "backend",
+              "ai_ml",
+              "data_science",
+              "cloud_devops"
+            ]
+          },
+          "context_chunk_ids": [
+            5,
+            4,
+            40,
+            39
+          ],
+          "source_titles": [
+            "Machine Learning - Tom Mitchell",
+            "Machine Learning Foundations Seed Corpus"
+          ],
+          "keywords": [
+            "bias",
+            "variance",
+            "regularization",
+            "cross-validation",
+            "overfitting",
+            "supervised learning",
+            "unsupervised learning",
+            "model evaluation"
+          ],
+          "question_policy": "role + resume signals + retrieved chunk keywords + turn difficulty",
+          "retrieval_query": "role: ai_ml_engineer. resume skills/domains: api deep learning docker embeddings fastapi git machine learning nlp numpy pandas backend ai_ml data_science cloud_devops. role expectations: supervised learning bias variance regularization model evaluation feature engineering decision trees neural networks nearest neighbors training data validation generalization overfitting practical deployment. candidate response: I would define the task and metric first, split validation data carefully to avoid leakage, compare a baseline with a regularized model, inspect bias and variance through validation curves, and monitor precision, recall, drift, API session state, retrieved chunks, and persistence after deployment. Demo response 1."
+        }
+      },
+      "summary": null
+    },
+    {
+      "session_id": "a432b38c-2748-4483-ab61-36a2fb297949",
+      "status": "active",
+      "answer_score": {
+        "score": 81.6,
+        "concept_coverage": 1.0,
+        "specificity": 0.47,
+        "matched_terms": [
+          "and",
+          "avoid",
+          "bias",
+          "data",
+          "leakage",
+          "model",
+          "precision",
+          "recall",
+          "response",
+          "split",
+          "state",
+          "task"
+        ],
+        "feedback": "Strong answer: it connected multiple retrieved concepts with enough detail."
+      },
+      "next_question": {
+        "turn_number": 3,
+        "question": "As an AI/ML Engineer, build on your previous answer and explain how you would apply cross-validation and supervised learning in a real project connected to api, deep learning, docker, embeddings. What assumptions would you validate, and what failure mode would you watch for?",
+        "difficulty": "advanced",
+        "retrieved_context": [
+          {
+            "chunk_id": 5,
+            "role": "ai_ml_engineer",
+            "source_title": "Machine Learning Foundations Seed Corpus",
+            "source_url": null,
+            "score": 0.3176,
+            "text": "too sensitive to training examples. Regularization, cross-validation, more data, and simpler hypotheses can reduce overfitting, but each choice has a tradeoff. Decision trees split data using tests over attributes and can represent interpretable rules. Nearest-neighbor methods classify by comparing a new example with stored examples under a distance function. Linear models combine features with learned weights and are often strong baselines. Neural networks learn layered representations but require careful training data, optimization, validation, and monitoring. Applied machine learning pipelines must avoid data leakage, choose metrics that match the problem, and communicate uncertainty. Classification metrics such as precision, recall, and F1 are useful when classes are imbalanced. Regression metrics such as mean absolute error or root mean squared error capture different error costs."
+          },
+          {
+            "chunk_id": 4,
+            "role": "ai_ml_engineer",
+            "source_title": "Machine Learning Foundations Seed Corpus",
+            "source_url": null,
+            "score": 0.3112,
+            "text": "Machine Learning Foundations Machine learning studies algorithms that improve their performance at a task through experience. A useful formulation identifies the task, the performance measure, and the training experience. Supervised learning uses labeled examples to learn a mapping from inputs to outputs, while unsupervised learning seeks structure in unlabeled data. Model evaluation should estimate performance on unseen data rather than only on training examples. Bias and variance describe two common sources of error. High bias can underfit because the hypothesis class is too restrictive or the features are inadequate. High variance can overfit because the model is too sensitive to training examples. Regularization, cross-validation, more data, and simpler hypotheses can reduce overfitting, but each choice has a tradeoff."
+          },
+          {
+            "chunk_id": 40,
+            "role": "ai_ml_engineer",
+            "source_title": "Machine Learning - Tom Mitchell",
+            "source_url": "https://www.cs.cmu.edu/~tom/files/MachineLearningTomMitchell.pdf?utm_source=chatgpt.com",
+            "score": 0.2882,
+            "text": "e power law of practice, which states that over a very broad range of learning problems, people's response time improves with practice according to a power law. Neurobiological studies motivating artificial neural network models of learning. 0 Statistics Characterization of errors (e.g., bias and variance) that occur when estimating the accuracy of a hypothesis based on a limited sample of data. Confidence intervals, statistical tests. TABLE 1.2 Some disciplines and examples of their influence on machine learning."
+          },
+          {
+            "chunk_id": 39,
+            "role": "ai_ml_engineer",
+            "source_title": "Machine Learning - Tom Mitchell",
+            "source_url": "https://www.cs.cmu.edu/~tom/files/MachineLearningTomMitchell.pdf?utm_source=chatgpt.com",
+            "score": 0.2703,
+            "text": "ty of different learning tasks, measured in terms of the computational effort, number of training examples, number of mistakes, etc. required in order to learn. Control theory Procedures that learn to control processes in order to optimize predefined objectives and that learn to predict the next state of the process they are controlling. 0 Information theory Measures of entropy and information content. Minimum description length approaches to learning. Optimal codes and their relationship to optimal training sequences for encoding a hypothesis. Philosophy Occam's razor, suggesting that the simplest hypothesis is the best. Analysis of the justification for generalizing beyond observed data. 0 Psychology and neurobiology The power law of practice, which states that over a very broad range of learning problems, people's response time improves with practice according to a power law."
+          }
+        ],
+        "generation_trace": {
+          "role": "ai_ml_engineer",
+          "candidate_signals": {
+            "skills": [
+              "api",
+              "deep learning",
+              "docker",
+              "embeddings",
+              "fastapi",
+              "git",
+              "machine learning",
+              "nlp",
+              "numpy",
+              "pandas",
+              "python",
+              "rag",
+              "react",
+              "sql",
+              "sqlite",
+              "vector database"
+            ],
+            "domains": [
+              "backend",
+              "ai_ml",
+              "data_science",
+              "cloud_devops"
+            ]
+          },
+          "context_chunk_ids": [
+            5,
+            4,
+            40,
+            39
+          ],
+          "source_titles": [
+            "Machine Learning - Tom Mitchell",
+            "Machine Learning Foundations Seed Corpus"
+          ],
+          "keywords": [
+            "bias",
+            "variance",
+            "regularization",
+            "cross-validation",
+            "overfitting",
+            "supervised learning",
+            "unsupervised learning",
+            "model evaluation"
+          ],
+          "question_policy": "role + resume signals + retrieved chunk keywords + turn difficulty",
+          "retrieval_query": "role: ai_ml_engineer. resume skills/domains: api deep learning docker embeddings fastapi git machine learning nlp numpy pandas backend ai_ml data_science cloud_devops. role expectations: supervised learning bias variance regularization model evaluation feature engineering decision trees neural networks nearest neighbors training data validation generalization overfitting practical deployment. candidate response: I would define the task and metric first, split validation data carefully to avoid leakage, compare a baseline with a regularized model, inspect bias and variance through validation curves, and monitor precision, recall, drift, API session state, retrieved chunks, and persistence after deployment. Demo response 2."
+        }
+      },
+      "summary": null
+    },
+    {
+      "session_id": "a432b38c-2748-4483-ab61-36a2fb297949",
+      "status": "active",
+      "answer_score": {
+        "score": 81.6,
+        "concept_coverage": 1.0,
+        "specificity": 0.47,
+        "matched_terms": [
+          "and",
+          "avoid",
+          "bias",
+          "data",
+          "leakage",
+          "model",
+          "precision",
+          "recall",
+          "response",
+          "split",
+          "state",
+          "task"
+        ],
+        "feedback": "Strong answer: it connected multiple retrieved concepts with enough detail."
+      },
+      "next_question": {
+        "turn_number": 4,
+        "question": "As an AI/ML Engineer, build on your previous answer and explain how you would apply overfitting and unsupervised learning in a real project connected to api, deep learning, docker, embeddings. What assumptions would you validate, and what failure mode would you watch for?",
+        "difficulty": "advanced",
+        "retrieved_context": [
+          {
+            "chunk_id": 5,
+            "role": "ai_ml_engineer",
+            "source_title": "Machine Learning Foundations Seed Corpus",
+            "source_url": null,
+            "score": 0.3176,
+            "text": "too sensitive to training examples. Regularization, cross-validation, more data, and simpler hypotheses can reduce overfitting, but each choice has a tradeoff. Decision trees split data using tests over attributes and can represent interpretable rules. Nearest-neighbor methods classify by comparing a new example with stored examples under a distance function. Linear models combine features with learned weights and are often strong baselines. Neural networks learn layered representations but require careful training data, optimization, validation, and monitoring. Applied machine learning pipelines must avoid data leakage, choose metrics that match the problem, and communicate uncertainty. Classification metrics such as precision, recall, and F1 are useful when classes are imbalanced. Regression metrics such as mean absolute error or root mean squared error capture different error costs."
+          },
+          {
+            "chunk_id": 4,
+            "role": "ai_ml_engineer",
+            "source_title": "Machine Learning Foundations Seed Corpus",
+            "source_url": null,
+            "score": 0.3112,
+            "text": "Machine Learning Foundations Machine learning studies algorithms that improve their performance at a task through experience. A useful formulation identifies the task, the performance measure, and the training experience. Supervised learning uses labeled examples to learn a mapping from inputs to outputs, while unsupervised learning seeks structure in unlabeled data. Model evaluation should estimate performance on unseen data rather than only on training examples. Bias and variance describe two common sources of error. High bias can underfit because the hypothesis class is too restrictive or the features are inadequate. High variance can overfit because the model is too sensitive to training examples. Regularization, cross-validation, more data, and simpler hypotheses can reduce overfitting, but each choice has a tradeoff."
+          },
+          {
+            "chunk_id": 40,
+            "role": "ai_ml_engineer",
+            "source_title": "Machine Learning - Tom Mitchell",
+            "source_url": "https://www.cs.cmu.edu/~tom/files/MachineLearningTomMitchell.pdf?utm_source=chatgpt.com",
+            "score": 0.2882,
+            "text": "e power law of practice, which states that over a very broad range of learning problems, people's response time improves with practice according to a power law. Neurobiological studies motivating artificial neural network models of learning. 0 Statistics Characterization of errors (e.g., bias and variance) that occur when estimating the accuracy of a hypothesis based on a limited sample of data. Confidence intervals, statistical tests. TABLE 1.2 Some disciplines and examples of their influence on machine learning."
+          },
+          {
+            "chunk_id": 39,
+            "role": "ai_ml_engineer",
+            "source_title": "Machine Learning - Tom Mitchell",
+            "source_url": "https://www.cs.cmu.edu/~tom/files/MachineLearningTomMitchell.pdf?utm_source=chatgpt.com",
+            "score": 0.2703,
+            "text": "ty of different learning tasks, measured in terms of the computational effort, number of training examples, number of mistakes, etc. required in order to learn. Control theory Procedures that learn to control processes in order to optimize predefined objectives and that learn to predict the next state of the process they are controlling. 0 Information theory Measures of entropy and information content. Minimum description length approaches to learning. Optimal codes and their relationship to optimal training sequences for encoding a hypothesis. Philosophy Occam's razor, suggesting that the simplest hypothesis is the best. Analysis of the justification for generalizing beyond observed data. 0 Psychology and neurobiology The power law of practice, which states that over a very broad range of learning problems, people's response time improves with practice according to a power law."
+          }
+        ],
+        "generation_trace": {
+          "role": "ai_ml_engineer",
+          "candidate_signals": {
+            "skills": [
+              "api",
+              "deep learning",
+              "docker",
+              "embeddings",
+              "fastapi",
+              "git",
+              "machine learning",
+              "nlp",
+              "numpy",
+              "pandas",
+              "python",
+              "rag",
+              "react",
+              "sql",
+              "sqlite",
+              "vector database"
+            ],
+            "domains": [
+              "backend",
+              "ai_ml",
+              "data_science",
+              "cloud_devops"
+            ]
+          },
+          "context_chunk_ids": [
+            5,
+            4,
+            40,
+            39
+          ],
+          "source_titles": [
+            "Machine Learning - Tom Mitchell",
+            "Machine Learning Foundations Seed Corpus"
+          ],
+          "keywords": [
+            "bias",
+            "variance",
+            "regularization",
+            "cross-validation",
+            "overfitting",
+            "supervised learning",
+            "unsupervised learning",
+            "model evaluation"
+          ],
+          "question_policy": "role + resume signals + retrieved chunk keywords + turn difficulty",
+          "retrieval_query": "role: ai_ml_engineer. resume skills/domains: api deep learning docker embeddings fastapi git machine learning nlp numpy pandas backend ai_ml data_science cloud_devops. role expectations: supervised learning bias variance regularization model evaluation feature engineering decision trees neural networks nearest neighbors training data validation generalization overfitting practical deployment. candidate response: I would define the task and metric first, split validation data carefully to avoid leakage, compare a baseline with a regularized model, inspect bias and variance through validation curves, and monitor precision, recall, drift, API session state, retrieved chunks, and persistence after deployment. Demo response 3."
+        }
+      },
+      "summary": null
+    },
+    {
+      "session_id": "a432b38c-2748-4483-ab61-36a2fb297949",
+      "status": "active",
+      "answer_score": {
+        "score": 81.6,
+        "concept_coverage": 1.0,
+        "specificity": 0.47,
+        "matched_terms": [
+          "and",
+          "avoid",
+          "bias",
+          "data",
+          "leakage",
+          "model",
+          "precision",
+          "recall",
+          "response",
+          "split",
+          "state",
+          "task"
+        ],
+        "feedback": "Strong answer: it connected multiple retrieved concepts with enough detail."
+      },
+      "next_question": {
+        "turn_number": 5,
+        "question": "As an AI/ML Engineer, build on your previous answer and explain how you would apply supervised learning and model evaluation in a real project connected to api, deep learning, docker, embeddings. What assumptions would you validate, and what failure mode would you watch for?",
+        "difficulty": "advanced",
+        "retrieved_context": [
+          {
+            "chunk_id": 5,
+            "role": "ai_ml_engineer",
+            "source_title": "Machine Learning Foundations Seed Corpus",
+            "source_url": null,
+            "score": 0.3176,
+            "text": "too sensitive to training examples. Regularization, cross-validation, more data, and simpler hypotheses can reduce overfitting, but each choice has a tradeoff. Decision trees split data using tests over attributes and can represent interpretable rules. Nearest-neighbor methods classify by comparing a new example with stored examples under a distance function. Linear models combine features with learned weights and are often strong baselines. Neural networks learn layered representations but require careful training data, optimization, validation, and monitoring. Applied machine learning pipelines must avoid data leakage, choose metrics that match the problem, and communicate uncertainty. Classification metrics such as precision, recall, and F1 are useful when classes are imbalanced. Regression metrics such as mean absolute error or root mean squared error capture different error costs."
+          },
+          {
+            "chunk_id": 4,
+            "role": "ai_ml_engineer",
+            "source_title": "Machine Learning Foundations Seed Corpus",
+            "source_url": null,
+            "score": 0.3112,
+            "text": "Machine Learning Foundations Machine learning studies algorithms that improve their performance at a task through experience. A useful formulation identifies the task, the performance measure, and the training experience. Supervised learning uses labeled examples to learn a mapping from inputs to outputs, while unsupervised learning seeks structure in unlabeled data. Model evaluation should estimate performance on unseen data rather than only on training examples. Bias and variance describe two common sources of error. High bias can underfit because the hypothesis class is too restrictive or the features are inadequate. High variance can overfit because the model is too sensitive to training examples. Regularization, cross-validation, more data, and simpler hypotheses can reduce overfitting, but each choice has a tradeoff."
+          },
+          {
+            "chunk_id": 40,
+            "role": "ai_ml_engineer",
+            "source_title": "Machine Learning - Tom Mitchell",
+            "source_url": "https://www.cs.cmu.edu/~tom/files/MachineLearningTomMitchell.pdf?utm_source=chatgpt.com",
+            "score": 0.2882,
+            "text": "e power law of practice, which states that over a very broad range of learning problems, people's response time improves with practice according to a power law. Neurobiological studies motivating artificial neural network models of learning. 0 Statistics Characterization of errors (e.g., bias and variance) that occur when estimating the accuracy of a hypothesis based on a limited sample of data. Confidence intervals, statistical tests. TABLE 1.2 Some disciplines and examples of their influence on machine learning."
+          },
+          {
+            "chunk_id": 39,
+            "role": "ai_ml_engineer",
+            "source_title": "Machine Learning - Tom Mitchell",
+            "source_url": "https://www.cs.cmu.edu/~tom/files/MachineLearningTomMitchell.pdf?utm_source=chatgpt.com",
+            "score": 0.2703,
+            "text": "ty of different learning tasks, measured in terms of the computational effort, number of training examples, number of mistakes, etc. required in order to learn. Control theory Procedures that learn to control processes in order to optimize predefined objectives and that learn to predict the next state of the process they are controlling. 0 Information theory Measures of entropy and information content. Minimum description length approaches to learning. Optimal codes and their relationship to optimal training sequences for encoding a hypothesis. Philosophy Occam's razor, suggesting that the simplest hypothesis is the best. Analysis of the justification for generalizing beyond observed data. 0 Psychology and neurobiology The power law of practice, which states that over a very broad range of learning problems, people's response time improves with practice according to a power law."
+          }
+        ],
+        "generation_trace": {
+          "role": "ai_ml_engineer",
+          "candidate_signals": {
+            "skills": [
+              "api",
+              "deep learning",
+              "docker",
+              "embeddings",
+              "fastapi",
+              "git",
+              "machine learning",
+              "nlp",
+              "numpy",
+              "pandas",
+              "python",
+              "rag",
+              "react",
+              "sql",
+              "sqlite",
+              "vector database"
+            ],
+            "domains": [
+              "backend",
+              "ai_ml",
+              "data_science",
+              "cloud_devops"
+            ]
+          },
+          "context_chunk_ids": [
+            5,
+            4,
+            40,
+            39
+          ],
+          "source_titles": [
+            "Machine Learning - Tom Mitchell",
+            "Machine Learning Foundations Seed Corpus"
+          ],
+          "keywords": [
+            "bias",
+            "variance",
+            "regularization",
+            "cross-validation",
+            "overfitting",
+            "supervised learning",
+            "unsupervised learning",
+            "model evaluation"
+          ],
+          "question_policy": "role + resume signals + retrieved chunk keywords + turn difficulty",
+          "retrieval_query": "role: ai_ml_engineer. resume skills/domains: api deep learning docker embeddings fastapi git machine learning nlp numpy pandas backend ai_ml data_science cloud_devops. role expectations: supervised learning bias variance regularization model evaluation feature engineering decision trees neural networks nearest neighbors training data validation generalization overfitting practical deployment. candidate response: I would define the task and metric first, split validation data carefully to avoid leakage, compare a baseline with a regularized model, inspect bias and variance through validation curves, and monitor precision, recall, drift, API session state, retrieved chunks, and persistence after deployment. Demo response 4."
+        }
+      },
+      "summary": null
+    },
+    {
+      "session_id": "a432b38c-2748-4483-ab61-36a2fb297949",
+      "status": "completed",
+      "answer_score": {
+        "score": 81.6,
+        "concept_coverage": 1.0,
+        "specificity": 0.47,
+        "matched_terms": [
+          "and",
+          "avoid",
+          "bias",
+          "data",
+          "leakage",
+          "model",
+          "precision",
+          "recall",
+          "response",
+          "split",
+          "state",
+          "task"
+        ],
+        "feedback": "Strong answer: it connected multiple retrieved concepts with enough detail."
+      },
+      "next_question": null,
+      "summary": {
+        "overall_score": 80.9,
+        "readiness_band": "strong",
+        "skills_detected": [
+          "api",
+          "deep learning",
+          "docker",
+          "embeddings",
+          "fastapi",
+          "git",
+          "machine learning",
+          "nlp",
+          "numpy",
+          "pandas",
+          "python",
+          "rag",
+          "react",
+          "sql",
+          "sqlite",
+          "vector database"
+        ],
+        "topics_evaluated": [
+          "deep learning",
+          "docker",
+          "embeddings",
+          "fastapi",
+          "machine learning",
+          "numpy",
+          "pandas",
+          "python"
+        ],
+        "strengths": [
+          "bias"
+        ],
+        "gaps": [],
+        "recommendation": "Advance to a deeper technical round with project-specific design questions.",
+        "traceability_note": "Each question stores retrieved chunk ids, source titles, candidate signals, and answer scoring terms."
+      }
+    }
+  ]
+}

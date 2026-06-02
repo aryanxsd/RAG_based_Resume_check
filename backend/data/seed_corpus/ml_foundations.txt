@@ -1,0 +1,9 @@
+Machine Learning Foundations
+
+Machine learning studies algorithms that improve their performance at a task through experience. A useful formulation identifies the task, the performance measure, and the training experience. Supervised learning uses labeled examples to learn a mapping from inputs to outputs, while unsupervised learning seeks structure in unlabeled data. Model evaluation should estimate performance on unseen data rather than only on training examples.
+
+Bias and variance describe two common sources of error. High bias can underfit because the hypothesis class is too restrictive or the features are inadequate. High variance can overfit because the model is too sensitive to training examples. Regularization, cross-validation, more data, and simpler hypotheses can reduce overfitting, but each choice has a tradeoff.
+
+Decision trees split data using tests over attributes and can represent interpretable rules. Nearest-neighbor methods classify by comparing a new example with stored examples under a distance function. Linear models combine features with learned weights and are often strong baselines. Neural networks learn layered representations but require careful training data, optimization, validation, and monitoring.
+
+Applied machine learning pipelines must avoid data leakage, choose metrics that match the problem, and communicate uncertainty. Classification metrics such as precision, recall, and F1 are useful when classes are imbalanced. Regression metrics such as mean absolute error or root mean squared error capture different error costs. A strong practitioner explains not only what model was chosen, but why it is appropriate under constraints.

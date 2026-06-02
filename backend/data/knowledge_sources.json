@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Machine Learning - Tom Mitchell",
+    "url": "https://www.cs.cmu.edu/~tom/files/MachineLearningTomMitchell.pdf?utm_source=chatgpt.com",
+    "source_tag": "ai_ml",
+    "role": "ai_ml_engineer"
+  },
+  {
+    "title": "The Hundred-Page Machine Learning Book - Andriy Burkov",
+    "url": "https://ema.cri-info.cm/wp-content/uploads/2019/07/2019BurkovTheHundred-pageMachineLearning.pdf?utm_source=chatgpt.com",
+    "source_tag": "ml_basics",
+    "role": "ai_ml_engineer"
+  },
+  {
+    "title": "Machine Learning for Absolute Beginners",
+    "url": "https://www.hlevkin.com/hlevkin/45MachineDeepLearning/ML/Machine%20Learning%20For%20Absolute%20Beginners.pdf?utm_source=chatgpt.com",
+    "source_tag": "ml_basics",
+    "role": "data_science_applied_ml"
+  },
+  {
+    "title": "Introduction to Machine Learning with Python",
+    "url": "https://www.nrigroupindia.com/e-book/Introduction%20to%20Machine%20Learning%20with%20Python%20%28%20PDFDrive.com%20%29-min.pdf?utm_source=chatgpt.com",
+    "source_tag": "data_science",
+    "role": "data_science_applied_ml"
+  },
+  {
+    "title": "Pattern Recognition and Machine Learning - Christopher Bishop",
+    "url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf?utm_source=chatgpt.com",
+    "source_tag": "advanced_ml",
+    "role": "advanced_theoretical_ml"
+  }
+]
