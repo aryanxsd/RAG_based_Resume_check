@@ -27,6 +27,26 @@ flowchart LR
     H --> F
 ```
 
+### Backend Structure
+
+- `backend/app/main.py` creates the FastAPI app and CORS setup.
+- `backend/app/api/routes.py` exposes the interview lifecycle endpoints.
+- `backend/app/services/resume_parser.py` parses uploaded resumes and extracts candidate signals.
+- `backend/app/services/vector_store.py` stores and searches embedded knowledge chunks.
+- `backend/app/services/rag.py` builds retrieval queries, generates questions, and scores answers.
+- `backend/app/services/interview.py` coordinates sessions, persistence, and summaries.
+- `backend/scripts/ingest.py` builds the role-specific vector store.
+
+### Data Flow
+
+1. Candidate uploads a resume and selects a target role.
+2. Backend extracts skills, domains, and topic signals from the resume.
+3. RAG service builds a role-aware query from the resume and selected role.
+4. Vector store retrieves relevant role-specific knowledge chunks.
+5. Question generator creates a contextual interview question and stores trace metadata.
+6. Candidate answers through the UI.
+7. Backend stores the answer, scores it, generates the next question, and eventually returns a final summary.
+
 ## Key Design Decisions
 
 - **FastAPI backend:** keeps request validation, upload handling, and API contracts explicit.
@@ -100,7 +120,18 @@ Open `http://127.0.0.1:5173`.
 - `POST /api/sessions/{session_id}/answers` stores an answer, scores it, and returns the next question or summary.
 - `GET /api/sessions/{session_id}/summary` returns the complete structured record.
 
+## Demo Video
 
+A generated demo video is included at:
+
+```text
+demo-video/candidate-screening-rag-demo.mp4
+```
+
+It was generated from a live API run and includes the transcript at:
+
+```text
+demo-video/demo-transcript.json
 ```
 
 To regenerate it while the backend and frontend are running:
@@ -122,4 +153,8 @@ If you want to record a manual browser walkthrough, record these steps:
 9. Complete the interview and show the final summary.
 10. Briefly show the stored session/traceability through the API docs at `http://127.0.0.1:8000/docs`.
 
+## Submission Notes
 
+- Push this folder to the GitHub repository.
+- Include the generated demo video or upload it separately if GitHub file size limits become a problem.
+- The backend root URL `/` may return `{"detail":"Not Found"}` because the API is served under `/api` and docs are at `/docs`.
